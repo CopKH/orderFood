@@ -1,0 +1,18 @@
+{
+    "schema_version": "v1",
+    "name_for_model": "nai_plugin",
+    "name_for_human": "นาย Plugin",
+    "description_for_model": "สั่งอาหารหรือเครื่องดื่มด้วยภาษาธรรมชาติ",
+    "description_for_human": "บอกนายว่าอยากกินอะไร แล้วนายจะจัดให้",
+    "auth": {
+      "type": "none"
+    },
+    "api": {
+      "type": "openapi",
+      "url": "https://orderfood-production.up.railway.app/openapi.yaml"
+    },
+    "logo_url": "https://via.placeholder.com/128?text=Nai",
+    "contact_email": "nai@yourdomain.com",
+    "legal_info_url": "https://yourdomain.com/legal"
+  }
+  
