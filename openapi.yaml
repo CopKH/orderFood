@@ -1,1 +1,34 @@
-https://orderfood-production.up.railway.app/openapi.yaml
+openapi: 3.0.1
+info:
+  title: Nai Plugin
+  description: สั่งอาหารผ่านระบบของนาย
+  version: "1.0.0"
+paths:
+  /command:
+    post:
+      summary: สั่งอาหาร
+      operationId: order_food
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/OrderFoodRequest'
+      responses:
+        "200":
+          description: สำเร็จ
+components:
+  schemas:
+    OrderFoodRequest:
+      type: object
+      properties:
+        command:
+          type: string
+          example: order_food
+        detail:
+          type: string
+          example: โกโก้
+      required:
+        - command
+        - detail
+
