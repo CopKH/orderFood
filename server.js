@@ -10,7 +10,7 @@ const AUTH_TOKEN = 'my-secret-token'
 app.post('/command', async (req, res) => {
   const authHeader = req.headers.authorization
   if (authHeader !== `Bearer ${AUTH_TOKEN}`) {
-    return res.status(403).json({ error: 'Unauthorized' })
+    return res.status(403).json({ error: 'Unauthorized dddddddd' })
   }
 
   const { command, detail } = req.body
